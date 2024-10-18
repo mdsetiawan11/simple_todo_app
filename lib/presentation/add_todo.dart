@@ -41,7 +41,7 @@ class _AddState extends State<Add> {
                     isLoading = true;
                   });
 
-                  Future.delayed(const Duration(seconds: 5), () {
+                  Future.delayed(const Duration(seconds: 2), () {
                     todoCubit.addTodo(formKey.currentState!.value['todo']);
                     setState(() {
                       isLoading = false;
